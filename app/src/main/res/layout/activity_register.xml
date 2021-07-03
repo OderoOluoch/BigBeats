@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".WelcomeActivity">
+    tools:context=".RegisterActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="335dp"
@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="390dp"
             android:layout_height="400dp"
-            android:background="@drawable/pic_three"/>
+            android:background="@drawable/pic_five"/>
 
     </LinearLayout>
     <TextView
@@ -45,6 +45,5 @@
         android:textColor="#fff"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"/>
-
 
 </LinearLayout>
