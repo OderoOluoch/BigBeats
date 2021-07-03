@@ -19,31 +19,46 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textSize="40dp"
-        android:layout_gravity="center"
+        android:text="Register"
+        android:textSize="35dp"
         android:textColor="#31274f"
         android:textStyle="bold"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:text="Email"
+        android:textColor="#31274f"
+        android:background="@drawable/forget"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:text="Password"
+        android:textColor="#31274f"
+        android:background="@drawable/forget"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"/>
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:text="LogIn"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Music that touches"
+        android:textSize="18sp"
+        android:text="login instead"
+        android:textColor="#31275f"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="56dp"
-        android:text="LogIn"
-        android:textColor="#fff"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="56dp"
-        android:text="Register"
-        android:textColor="#fff"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>
