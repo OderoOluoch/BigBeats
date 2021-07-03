@@ -19,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RegisterActivity.this, MusicActivity.class);
+                //intent.putExtra("location", location);
                 startActivity(intent);
             }
         });
