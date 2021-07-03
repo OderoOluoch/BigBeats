@@ -10,7 +10,10 @@ import android.widget.TextView;
 
 
  public class MainActivity extends AppCompatActivity {
-    //Hooks variables.
+    //To control how long the splash screen is displayed.
+     private static int SPLASH_TIME_OUT = 5000;
+
+     //Hooks variables.
      View first,second,third,fourth,fifth,sixth;
      TextView tagLine,logoText;
 
