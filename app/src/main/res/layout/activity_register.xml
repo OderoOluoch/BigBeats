@@ -13,12 +13,13 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:background="@drawable/pic_five"/>
+            android:background="@drawable/pic_four"/>
 
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
         android:text="Register"
         android:textSize="35dp"
         android:textColor="#31274f"
@@ -44,7 +45,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="56dp"
-        android:text="LogIn"
+        android:text="Register"
         android:id="@+id/goToSeeMusciFRomRegister"
         android:background="@drawable/button"
         android:textColor="#fff"
