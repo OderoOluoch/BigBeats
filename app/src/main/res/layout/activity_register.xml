@@ -48,6 +48,7 @@
         android:layout_width="340dp"
         android:layout_height="56dp"
         android:text="LogIn"
+        android:id="@+id/goToSeeMusciFRomRegister"
         android:background="@drawable/button"
         android:textColor="#fff"
         android:layout_gravity="center"

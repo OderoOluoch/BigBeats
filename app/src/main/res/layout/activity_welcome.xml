@@ -35,6 +35,7 @@
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:text="LogIn"
+        android:id="@+id/goToLoginScreen"
         android:textColor="#fff"
         android:background="@drawable/button"
         android:layout_gravity="center"
@@ -44,6 +45,7 @@
         android:background="@drawable/button"
         android:layout_height="56dp"
         android:text="Register"
+        android:id="@+id/goToSigInScreen"
         android:textColor="#fff"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"/>
