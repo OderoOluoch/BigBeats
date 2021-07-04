@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
+
+import butterknife.BindView;
 
 
  public class MainActivity extends AppCompatActivity {
@@ -17,8 +20,16 @@ import android.widget.TextView;
      private static int SPLASH_TIME_OUT = 5000;
 
      //Hooks variables.
-     View first,second,third,fourth,fifth,sixth;
-     TextView tagLine,logoText;
+     @BindView(R.id.first_line) View first;
+     @BindView(R.id.second_line) View second;
+     @BindView(R.id.third_line) View third;
+     @BindView(R.id.fourth_line) View fourth;
+     @BindView(R.id.fifth_line) View fifth;
+     @BindView(R.id.sixth_line) View sixth;
+
+     @BindView(R.id.tagLine) TextView tagLine;
+     @BindView(R.id.textLogo) TextView logoText;
+
 
 
      //Animation variables
@@ -35,16 +46,6 @@ import android.widget.TextView;
         middleAnimation = AnimationUtils.loadAnimation(this,R.anim.middle_animation);
 
         //Hooks
-        first = findViewById(R.id.first_line);
-        second = findViewById(R.id.second_line);
-        third = findViewById(R.id.third_line);
-        fourth = findViewById(R.id.fourth_line);
-        fifth = findViewById(R.id.fifth_line);
-        sixth = findViewById(R.id.sixth_line);
-
-        tagLine = findViewById(R.id.tagLine);
-        logoText = findViewById(R.id.textLogo);
-
         first.setAnimation(topAnimation);
         second.setAnimation(topAnimation);
         third.setAnimation(topAnimation);
