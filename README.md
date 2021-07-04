@@ -4,8 +4,16 @@ An Android App that plays music using the MixCloud API.
 
 
 
-![Landing Page](./app/src/main/res/drawable/bigbeatsone.png)
-Landing Page
+![Splash Screen](./app/src/main/res/drawable/bigbeatsone.png)
+
+![Welcome Screen](./app/src/main/res/drawable/bigbeatstwo.png)
+
+![Log In Screen](./app/src/main/res/drawable/bigbeatsthree.png)
+
+![RegisterScreen](./app/src/main/res/drawable/bigbeatsfour.png)
+
+![Music Category Screen](./app/src/main/res/drawable/bigbeatsffive.png)
+
 
 
 
@@ -16,7 +24,7 @@ Run this command to clone the repo in your local machine.
 ```
 git clone https://github.com/OderoOluoch/BigBeats.git
 ```
-Confirm all depenencies are synched as you let graddle do it's thing. 
+Confirm all dependencies are synced as you let gradle do it's thing.
 
 
 ### Prerequisites
