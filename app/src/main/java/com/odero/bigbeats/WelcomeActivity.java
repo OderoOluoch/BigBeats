@@ -7,16 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import butterknife.BindView;
+
 public class WelcomeActivity extends AppCompatActivity {
-    Button login,register;
+    @BindView(R.id.goToLoginScreen) Button login;
+    @BindView(R.id.goToSigInScreen) Button register;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        login = findViewById(R.id.goToLoginScreen);
-        register = findViewById(R.id.goToSigInScreen);
-
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
