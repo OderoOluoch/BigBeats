@@ -34,14 +34,16 @@
                     android:textColor="@color/black"
                     android:textSize="26sp"
                     android:textStyle="bold"/>
+
                 <TextView
                     android:id="@+id/categoryDescription"
-                    android:paddingLeft="10sp"
-                    android:paddingRight="10sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Smooth Jazz"/>
+                    android:fontFamily="@font/amaranth_italic"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:text="Smooth Jazz" />
 
             </LinearLayout>
 

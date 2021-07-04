@@ -14,8 +14,8 @@ import butterknife.ButterKnife;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
     @BindView(R.id.goToSeeMusciFRomRegister) Button seeMusic;
-    @BindView(R.id.emailInputRegisterView) EditText mRegisterUserName;
-    @BindView(R.id.nameInputRegisterView) EditText mRegisterUserEmail;
+    @BindView(R.id.nameInputRegisterView) EditText mRegisterUserName;
+    @BindView(R.id.emailInputRegisterView) EditText mRegisterUserEmail;
     @BindView(R.id.passwordInputRegisterView) EditText mRegisterUserPassword;
 
 
