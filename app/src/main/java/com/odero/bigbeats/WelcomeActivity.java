@@ -6,33 +6,41 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
-public class WelcomeActivity extends AppCompatActivity {
-    Button login,register;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
+
+    //Using BIndView from ButterKnife.
+    @BindView(R.id.goToLoginScreen) Button login;
+    @BindView(R.id.goToSigInScreen) Button register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        login = findViewById(R.id.goToLoginScreen);
-        register = findViewById(R.id.goToSigInScreen);
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, LogInActivity.class);
-                startActivity(intent);
-            }
-        });
+        //BindViews
+        ButterKnife.bind(this);
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
+        //Implemented because of the onclick interface
+        login.setOnClickListener(this);
+        register.setOnClickListener(this);
+
     }
 
+    @Override
+    public void onClick(View v) {
+        //Helps us navigate between the log in and the register button.
+        if(v == login){
+            Intent intent = new Intent(WelcomeActivity.this, LogInActivity.class);
+            startActivity(intent);
+        }else if(v == register){
+            Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        }
 
+    }
 }

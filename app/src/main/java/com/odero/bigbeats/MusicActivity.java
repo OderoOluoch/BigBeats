@@ -22,6 +22,8 @@ public class MusicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
         Intent intent = getIntent();
+
+        //Set the title of the view dynamically.
         String userName = intent.getStringExtra("userName");
         this.setTitle("User Name : "+userName);
 

@@ -9,10 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BigBeats">
-        <activity android:name=".MusicActivity"></activity>
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".MusicActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.odero.bigbeats.LogInActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".LogInActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.odero.bigbeats.WelcomeActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".RegisterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.odero.bigbeats.WelcomeActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/NoActionBarTheme">></activity>
         <activity
             android:name=".MainActivity"
             android:theme="@style/NoActionBarTheme">

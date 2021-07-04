@@ -9,8 +9,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
 
  public class MainActivity extends AppCompatActivity {
     //To control how long the splash screen is displayed.
@@ -19,7 +21,6 @@ import android.widget.TextView;
      //Hooks variables.
      View first,second,third,fourth,fifth,sixth;
      TextView tagLine,logoText;
-
 
      //Animation variables
      Animation topAnimation,bottomAnimation,middleAnimation;
