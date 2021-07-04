@@ -8,15 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import butterknife.BindView;
+
 public class LogInActivity extends AppCompatActivity {
-    private Button seeMusic;
-    private EditText mUserName;
+    @BindView(R.id.goToSeeMusicFromLogIn) Button seeMusic;
+    @BindView(R.id.nameInputLoginView) EditText mUserName;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-        mUserName = findViewById(R.id.nameInputLoginView);
-        seeMusic = findViewById(R.id.goToSeeMusicFromLogIn);
         seeMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
