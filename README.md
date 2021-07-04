@@ -1,6 +1,13 @@
 # BigBeats
 
-An Android App that plays music using the MixColud API.
+An Android App that plays music using the MixCloud API.
+
+
+
+![Landing Page](./app/src/main/res/drawable/bigbeatsone.png)
+Landing Page
+
+
 
 ## Getting Started
 
@@ -17,23 +24,16 @@ Confirm all depenencies are synched as you let graddle do it's thing.
 Ensure you have all the nesesary Java SDK and Android Studio SDK tools in place.
 
 
-
-
 ## Built With
 
-* [Android Studio](https://developer.android.com/) - 
+* [Android Studio](https://developer.android.com/) - Java framework used to develop
 * [Gradle](https://gradle.org/) - Dependency Management
-
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 
 ## Authors
 
-* **OderoOluoch** - *Initial work* - [PurpleBooth](https://github.com/OderoOluoch)
+* **OderoOluoch** - *Initial work* - [OderoOluoch](https://github.com/OderoOluoch)
 
 
 
