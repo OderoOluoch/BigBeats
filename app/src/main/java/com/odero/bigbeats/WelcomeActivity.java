@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
     Button login,register;
 
     @Override
@@ -20,22 +21,22 @@ public class WelcomeActivity extends AppCompatActivity {
         //Find views by their ID.
         login = findViewById(R.id.goToLoginScreen);
         register = findViewById(R.id.goToSigInScreen);
+        ButterKnife.bind(this);
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, LogInActivity.class);
-                startActivity(intent);
-            }
-        });
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
+        login.setOnClickListener(this);
+        register.setOnClickListener(this);
+
     }
 
+    @Override
+    public void onClick(View v) {
+        if(v == login){
+            Intent intent = new Intent(WelcomeActivity.this, LogInActivity.class);
+            startActivity(intent);
+        }else if(v == register){
+            Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        }
 
+    }
 }
