@@ -31,11 +31,11 @@ public class CategoryListAdapter extends ArrayAdapter<Category> {
         TextView categoryDescription = convertView.findViewById(R.id.categoryDescription);
         TextView numberOfSongs = convertView.findViewById(R.id.numberOfSongs);
 
-        imageView.setImageResource(category.imageId);
-        categoryName.setText(category.categoryName);
-        categoryDescription.setText(category.categoryDescription);
-        numberOfSongs.setText(category.numberOfSongs);
+        imageView.setImageResource(category.getImageId());
+        categoryName.setText(category.getCategoryName());
+        categoryDescription.setText(category.getCategoryDescription());
+        numberOfSongs.setText(category.getNumberOfSongs());
 
-        return super.getView(position, convertView, parent);
+        return convertView;
     }
 }
